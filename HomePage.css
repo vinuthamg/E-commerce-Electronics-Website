@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+background-color: bisque;
+}
+
+
+
+.navbarContrainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgb(21, 43, 60);
+    color: aliceblue;
+}
+
+.logo{
+    font-size: 30px;
+    color: skyblue;
+}
+
+.menu-items{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content: space-around;
+}
+
+.menu-items a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.menu-items a:hover{
+    color: skyblue;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    position: absolute;
+    display: none;
+    max-height: 150px;
+    background-color: aliceblue;
+    color: #172738;
+    top:15px;
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: #172738;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown span{
+    font-weight: 40px;
+    font-weight: 400;
+    color: white;
+}
+
+#search{
+    width: 250px;
+    border: none;
+    height: 28px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.nav-right a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-right a:hover{
+    color: skyblue;
+}
+
+.nav-right img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+
+.firstContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: rgb(14, 210, 244)
+}
+
+.container-content{
+   margin-bottom: 10px;
+   font-size:35px;
+   display: flex;
+    flex-direction: column;
+    align-items: center;   
+    justify-content: center;
+    text-align: center;  
+
+
+}
+
+.container-content p{
+    font-size: 25px;
+    margin-top: 15px;
+    
+    
+}
+
+.container-content button{
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: rgb(13, 56, 88);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 20px;
+    
+   
+}
+
+
+/* 2nd container */
+
+
+.category{
+    margin:20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.cat{
+    margin:10px;
+    padding:10px 20px;
+    background-color: white;
+    border-radius: 20px;   
+    box-shadow: 0 0 5px grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.features{
+    margin:20px;
+    padding:10px 20px;
+    background-color: white;
+    border-radius: 20px;   
+    box-shadow: 0 0 5px grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    font-size: 20px;
+}
+
+
+.features aside:hover,.cat:hover{
+    transform:scale(1.1);
+}
+
+
+/* Product Container */
+#product-Container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 30px;
+}
+
+#product-Container .product-card{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    max-height: 400px;
+    background-color: white;
+    box-shadow: 0 0 5px grey;
+    border-radius: 20px;
+}
+
+.product-card img{
+    height: 150px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+.product-card p{
+    font-size: 20px;
+}
+
+.product-card button{
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+}
+
+.product-card button:first-of-type{
+    background-color: skyblue;
+}
+
+.product-card button:last-of-type{
+    background-color: sandybrown;
+}
+
+.product-card button:hover{
+    transform: scale(1.1);
+}
+
+.product-card:hover{
+    transform: scale(1.05);
+}
+
+
+#wishlist-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 20px;
+}
